@@ -1,0 +1,27 @@
+
+.clear {
+    background-image: url('https://glyphicons.com/img/glyphicons/basic/2x/glyphicons-basic-38-picture@2x.png');
+    width: 40px;
+    height: 40px;
+}
+
+.getCor {
+    background-image: url('https://glyphicons.com/img/glyphicons/basic/2x/glyphicons-basic-91-eyedropper@2x.png');
+}
+
+.seta {
+    background-image: url('https://glyphicons.com/img/glyphicons/basic/2x/glyphicons-basic-98-vector-path-line@2x.png');
+}
+
+.pencil {
+    background-image: url('https://glyphicons.com/img/glyphicons/basic/2x/glyphicons-basic-31-pencil@2x.png');
+}
+
+.balde {
+    background-image: url('https://glyphicons.com/img/glyphicons/basic/2x/glyphicons-basic-245-fill@2x.png');
+}
+
+.boracha {
+    background-image: url('https://glyphicons.com/img/glyphicons/basic/2x/glyphicons-basic-250-eraser@2x.png');
+}
+

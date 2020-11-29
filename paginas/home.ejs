@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <title>home</title>
+</head>
+<body>
+    <div class="conteiner">
+        <h2>ben-vindo</h2>
+        <div class="c2">
+            <label class="space" for="nome">Nome:</label>
+            <input class="space" type="text" placeholder="nome" name="" id="nome">
+        </div>
+        <div class="areaBtn">
+            <button onclick="cadastra()">cadastra</button>
+            <button> <a href="/game">entra</a></button>
+            <p id="erro"></p>
+        </div>
+    </div>
+
+    <script>
+        const meg = document.getElementById('erro');
+        const socket = io();
+        
+        function cadastra(){
+            const nome = document.getElementById('nome').value;
+            
+            if(nome.length >= 1){
+                document.cookie = 'nome=' + nome +'; pach=/';
+                fetch(`/home?nome=${nome}`, { method: 'post' }).then(res => {
+                    console.log(res.status);
+                    res.json().then(obj => {
+                        meg.innerText = obj.meg;
+                    })
+                })
+            }else{
+                meg.innerText = 'nome esta em  banco';
+            }
+        }
+
+        function getCookie(){
+            const cookie = 'nome=';
+            let cookies = document.cookie;
+            cookies = cookies.split(';');
+
+            for (let i = 0; i < cookies.length; i++) {
+                let tmp = cookies[i].indexOf(cookie);
+                if(tmp !== -1){
+                    return cookies[i].substring(cookie.length);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

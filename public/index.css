@@ -1,0 +1,154 @@
+html {
+    background-color: #57c5de;
+}
+
+
+        .conteiner {
+            width: 800px;
+            height: 600px;
+            border: 1px solid black;
+            margin-left: 20%;
+            background-color: #00ca92;
+        }
+
+        .areaPessoas {
+            width: 180px;
+            height: 580px;
+            float: left;
+            /* background-color: blue; */
+            padding: 10px;
+        }
+
+        .player {
+            width: 100%;
+            height: 49px;
+            margin-bottom: 10px;
+            background-color: green;
+            border-radius: 10px;
+        }
+
+        .data {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        .player p {
+            margin: 0;
+        }
+
+        .areaTC {
+            width: 600px;
+            height: 100%;
+            float: left;
+            background-color: aqua;
+        }
+
+        .areaTela {
+            width: 100%;
+            height: 400px;
+            background-color: brown;
+        }
+
+        .tela {
+            width: 496px;
+            height: 396px;
+            border: 2px solid gray;
+            float: left;
+            background-color: white;
+            position: relative;
+        }
+
+        .tela canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .areaOption {
+            width: 100px;
+            height: auto;
+            float: right;
+        }
+
+        .cores {
+            width: 24px;
+            height: 80px;
+            padding: 10px 5px 5px 5px;
+            float: left;
+        }
+
+        .Cor {
+            width: 10px;
+            height: 10px;
+            margin: 0px 0px 2px 2px;
+            float: left;
+        }
+
+        .cor-selected {
+            width: 22px;
+            height: 20px;
+            float: left;
+            margin: 2px 2px 2px 2px;
+        }
+
+        .Buttons {
+            width: auto;
+            height: 100%;
+            float: left;
+            margin-top: 10px;
+        }
+
+        .Buttons button {
+            width: 40px;
+            height: 40px;
+            margin: 5px;
+            padding: 0px;
+            float: left;
+        }
+
+        .Buttons img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .areaChat {
+            width: 600px;
+            height: 200px;
+            background-color: springgreen;
+        }
+
+        .comments {
+            width: 100%;
+            height: 85%;
+            background-color: orchid;
+            overflow: auto;
+        }
+
+        .comments div {
+            margin: 0px 5px 5px 5px;
+        }
+
+        .com-input {
+            width: 100%;
+            height: 15%;
+            background-color: magenta;
+        }
+
+        .com-input input {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        .com-input label {
+            margin: 0%;
+        }
+
+        .borda {
+            border: 1px solid black;
+        }
+
+        
+ 
