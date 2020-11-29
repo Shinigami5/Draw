@@ -83,7 +83,6 @@ class game {
     }
 
     verificarWord(objMeg){
-        //console.log(objMeg.meg.length);
         if(objMeg.meg.length <= 30){
             if(objMeg.meg === this.wordAtual){
                 this.beOnList(objMeg);
@@ -91,7 +90,6 @@ class game {
                 this.io.emit('meg', objMeg);
             }
         }else{
-            //console.log('in else ' + objMeg.meg);
             this.io.emit('meg', objMeg);
         }
     }
@@ -100,7 +98,6 @@ class game {
         const redundancia = this.players.find((n) => {
             return n.nome === nome;
         });
-        //console.log(redudancia);
         if(redundancia === undefined){
             this.players.push({ socketId: undefined, nome: nome, pontos: 0 });
             this.io.emit('update list players');

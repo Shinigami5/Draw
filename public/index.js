@@ -1,14 +1,4 @@
 
-function drawPonit(x, y){
-    ctx.fillStyle = 'rgb(0, 0, 0)';
-    ctx.beginPath();
-    ctx.arc(x, y, 4, 0, Math.PI * 2);
-    //darw.closePath();
-    //ctx.stroke();
-    ctx.fill();
-}
-
-
 const socket = io();
 
 const playerSession = {
@@ -56,7 +46,6 @@ function deleteCookie(nome){
 
 function showPlayers(player){
     const elem = document.querySelector('.areaPessoas');
-                     //elem.getElementsByTagName(player.nome);
     const jaExiste = document.getElementById(player.nome);
     //console.log(jaExiste)
 
@@ -167,10 +156,3 @@ function init(){
 }
 
 init();
-
-
-
-//c.addEventListener('mouseover', precionado);      // mover o mouse sobre o Elem ?
-//c.addEventListener('mouseleave', precionado);      // mover para fora do Elem
-//c.addEventListener('mouseenter', precionado);      // mover para dendo do Elem ?
-

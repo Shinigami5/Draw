@@ -1,6 +1,4 @@
 
-//let socket = undefined;
-
 const c = document.querySelector('#canMain');
 const c2 = document.querySelector('#seta');
 c.width = 500;
@@ -73,7 +71,6 @@ const drawTela = {
 
 
 function mouseDown(event){
-    //ctx.moveTo(event.x-481, event.y-13);
     drawTela.lastLocation.x = event.offsetX;
     drawTela.lastLocation.y = event.offsetY;
     drawTela.desenhado = true;
@@ -116,15 +113,12 @@ const modos = {
         ctx.stroke();
         drawTela.lastLocation.x = drawTela.x;
         drawTela.lastLocation.y = drawTela.y;
-        //console.log('x', drawTela.x, drawTela.lastLocation.x);
-        //console.log('y', drawTela.y, drawTela.lastLocation.y);
     },
 
     eraser(drawTela){
         ctx.globalCompositeOperation = 'destination-out'
         ctx.beginPath();
         ctx.arc(drawTela.x, drawTela.y, 10, 0, Math.PI * 2);
-        //ctx.fillRect(event.x-481, event.y-13, 10, 10);
         ctx.fill();
         ctx.globalCompositeOperation = 'source-over'
     },
